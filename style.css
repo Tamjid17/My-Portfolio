@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Alegreya;
+}
+
+html,body{
+    width: 100%;
+    height: 220%;
+    background-color: #EEEEEE;
+}
+
+.menubar {
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(to bottom, rgb(15, 98, 171), #00ADB5);
+    /* position: fixed; */
+    display: grid;
+    grid-template-columns: 20% 16% 16% 16% 16% 16%;
+    padding-left: 200px;
+    padding-top: 33px;
+}
+
+.menubar p{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.introduction {
+    display: grid;
+    height: 750px;
+    grid-template-columns: 45% 55%;
+    background-color: #EEEEEE;
+}
+
+.introduction #left {
+    padding-top: 250px;
+    padding-left:  250px;
+    color: black;
+}
+
+#left p {
+    font-size: 40px;
+}
+#left .name {
+    font-size: 40px;
+    
+}
+#left #ocp {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: #FF5722;
+}
+#left a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+#right #pic {
+    background: url(Assets/Pic.jpg);
+    height: 400px;
+    width: 400px;
+    border: 3px solid black;
+    margin-top: 120px;
+    margin-left: 150px;
+    background-position: 50% 50%;
+    background-size: cover;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
+.about {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: #FF5722;
+}
+.about .inner {
+    display: grid;
+    height: 550px;
+    width: 1200px;
+    grid-template-columns: 40% 60%;
+}
+.about #left {
+    background: url(Assets/aboutpic.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+.about #right {
+    margin-left: 120px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.about #right h1 {
+    margin-bottom: 30px;
+}
+.about #right p {
+    font-size: 24px;
+    font-family: Merriweather;
+    line-height: 40px;
+}
+.education {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #18AEC7;
+}
+.education .inner {
+    display: grid;
+    height: 480px;
+    width: 1200px;
+    grid-template-columns: 60% 40%;
+}
+
+.education #right {
+    border: 3px solid greenyellow;
+}
+.education #left {
+    /* border: 3px solid greenyellow; */
+    background: url(Assets/education.jpeg);
+    background-position: center;
+    background-size: cover;
+}
