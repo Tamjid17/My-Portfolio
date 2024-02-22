@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamjid</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -51,11 +52,89 @@
         <div class="inner">
             <div id="right">
                 <h1>Education</h1>
-                <p id="certificate"></p>
-                <p id="institute"></p>
-                <p id="year"></p>
+                <div id="details">
+                    <div id="textbox">
+                        <p id="certificate">Bachelor of Science in Software Engineering</p>
+                        <p id="institute">IICT, Shahjalal University of Science and Technology</p>
+                        <p id="year">2022-Present</p>
+                    </div>
+                    <div id="textbox">
+                        <p id="certificate">Higher Secondary Certificate</p>
+                        <p id="institute">Hamdard Public College, Dhaka</p>
+                        <p id="year">2018-2020, Group: Science</p>
+                    </div>
+                    <div id="textbox">
+                        <p id="certificate">Secondary School Certificate</p>
+                        <p id="institute">Birshrestha Munshi Abdur Rouf Public College</p>
+                        <p id="year">2016-2018, Group: Science</p>
+                    </div>
+                </div>
             </div>
             <div id="left"></div>
+        </div>
+    </div>
+    <div class="skills">
+        <div id="up">
+            <h1>Skills</h1>
+        </div>
+        <section>
+        <div id="bottom">
+            <div class="bar"><i class='bx bxl-html5'></i>
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class='bx bxl-css3'></i>
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class='bx bxl-javascript'></i>
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line javascript">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class='bx bxl-c-plus-plus'></i>
+                <div class="info">
+                    <span>C++</span>
+                </div>
+                <div class="progress-line cpp">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class='bx bxl-java'></i>
+                <div class="info">
+                    <span>Java</span>
+                </div>
+                <div class="progress-line java">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="contact">
+        <div id="up">
+            <h1>Contact me</h1>
+        </div>
+        <div id="bottom">
+            <form action="" class="cont" method="POST" id="form">
+                <input type="hidden" name="access_key" value="2c0edb6f-cff0-4d82-8374-0ba87bca7e01">
+                <input type="text" name="name" placeholder="Your Name" class="contact-info" required>
+                <input type="text" name="email" placeholder="Your Mail" class="contact-info" required>
+                <textarea name="message" placeholder="Your Message" class="contact-info1" required></textarea>
+                <button type="submit">Submit</button>
+                <div id="result"></div>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
