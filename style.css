@@ -353,7 +353,6 @@ section {
 }
 .projects .inner{
 
-    border: 3px solid yellow;
     width: 80%;
     height: 90vh;
 }
@@ -403,21 +402,48 @@ section {
     
 }
 .probox-left #dan1 {
+    padding-top: 3vh;
     width: 60%;
     height: inherit;
     border: 3px solid greenyellow;
+    text-align: center;
     
 }
+.probox-left #dan1 a{
+    color: #00ADB5;
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 .probox-left #dan2 {
     width: 60%;
     height: inherit;
     border: 3px solid greenyellow;
-    
+    text-align: center;
+    padding-top: 3vh;
+}
+.probox-left #dan2 a{
+    color: #00ADB5;
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 18px;
 }
 .probox-right #bam {
     width: 60%;
     height: inherit;
     border: 3px solid greenyellow;
+    padding-top: 3vh;
+    text-align: center;
+}
+.probox-right #bam a{
+    color: #00ADB5;
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 18px;
 }
 .probox-right #dan {
     width: 40%;
