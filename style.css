@@ -126,9 +126,6 @@ html,body{
     grid-template-columns: 60% 40%;
 }
 
-.education #right {
-    /* border: 3px solid greenyellow; */
-}
 .education #left {
     /* border: 3px solid greenyellow; */
     background: url(Assets/education.jpeg);
@@ -343,12 +340,44 @@ section {
     background: linear-gradient(270deg, #18AEC7, #97ccd5);
     cursor: pointer;
 }
+.projects{
+    display: grid;
+    background-color: #081b29;
+    height: 900px;
+    justify-items: center;
 
-@media (max-width:600px) {
-    .contact-info{
-        width: 60vw;
-    }
-    .contact-info1{
-        width: 60vw;
-    }
+}
+.projects #up {
+    padding-top: 5vh;
+    color: white;
+}
+.projects .inner{
+
+    border: 3px solid yellow;
+    width: 80%;
+    height: 90vh;
+}
+
+.probox-left{
+    margin-left: 2vw;
+    margin-top: 2vh;
+    border: 3px solid greenyellow;
+    width: 60%;
+    height: 27vh;
+    background-color: #EEEEEE;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.probox-right{
+    margin-left: 29vw;
+    margin-top: 2vh;
+    border: 3px solid greenyellow;
+    width: 60%;
+    height: 27vh;
+    background-color: #EEEEEE;
+    overflow: hidden;
+    border-radius: 20px;
+
 }
