@@ -6,15 +6,14 @@ function showOccupation() {
     occupationElement.textContent = occupations[currentIndex];
     occupationElement.style.opacity = 1;
     currentIndex = (currentIndex + 1) % occupations.length;
-    setTimeout(hideOccupation, 2000); // Display each occupation for 2 seconds
+    setTimeout(hideOccupation, 2000);
   }
 
   function hideOccupation() {
     occupationElement.style.opacity = 0;
-    setTimeout(showOccupation, 500); // Delay before fading in again
+    setTimeout(showOccupation, 500); 
   }
 
-  // Initial trigger
   showOccupation();
 
   const form = document.getElementById('form');
@@ -57,3 +56,9 @@ function showOccupation() {
               }, 3000);
           });
   });
+
+  let grill = document.querySelector(".grill")
+  grill.onclick = function() {
+    let navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active")
+  }

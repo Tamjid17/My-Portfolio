@@ -26,39 +26,94 @@ html,body{
     font-size: 20px;
     color: white;
 } */
-
-nav{
-    background: linear-gradient(to bottom, #97ccd5, #00ADB5);
-    height: 80px;
+header{
     width: 100%;
-}
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
+    height: 80px;
+    background: linear-gradient(to bottom, #97ccd5, #00ADB5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 0 100px;
+}
+.logo {
+    font-size: 28px;
     font-weight: bold;
+    color: #EEEEEE;
 }
-nav ul{
-    float: right;
-    margin-right: 20px;
+.grill{
+    display: none;
 }
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    display: block;
+    color: #EEEEEE;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
     margin: 0 5px;
 }
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+.nav-bar ul li a:hover{
+    color: #081b29;
+    background-color: #00ADB5;
 }
-a.active,a:hover{
-    background-color: #18AEC7;
-    transition: 0.5s;
+.nav-bar ul li a.active{
+    color: #081b29;
+    background-color: #00ADB5;
+}
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1110px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .grill{
+        display: block;
+        cursor: pointer;
+    }
+    .grill .line{
+        width: 30px;
+        height: 3px;
+        background: #EEEEEE;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #081b29;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
 }
 .introduction {
     display: grid;
