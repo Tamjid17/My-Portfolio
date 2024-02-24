@@ -367,6 +367,7 @@ section {
     background-color: #EEEEEE;
     overflow: hidden;
     border-radius: 20px;
+    display: flex;
 
 }
 
@@ -379,5 +380,41 @@ section {
     background-color: #EEEEEE;
     overflow: hidden;
     border-radius: 20px;
+    display: flex;
 
+}
+
+.probox-left #bam1 {
+    width: 40%;
+    height: inherit;
+    border: 3px solid greenyellow;
+    
+}
+.probox-left #bam2 {
+    width: 40%;
+    height: inherit;
+    border: 3px solid greenyellow;
+    
+}
+.probox-left #dan1 {
+    width: 60%;
+    height: inherit;
+    border: 3px solid greenyellow;
+    
+}
+.probox-left #dan2 {
+    width: 60%;
+    height: inherit;
+    border: 3px solid greenyellow;
+    
+}
+.probox-right #bam {
+    width: 60%;
+    height: inherit;
+    border: 3px solid greenyellow;
+}
+.probox-right #dan {
+    width: 40%;
+    height: inherit;
+    border: 3px solid greenyellow;
 }
