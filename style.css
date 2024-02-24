@@ -388,12 +388,18 @@ section {
     width: 40%;
     height: inherit;
     border: 3px solid greenyellow;
+    background: url(Assets/rsz_1pingpong.png);
+    background-position: center;
+    background-size: cover;
     
 }
 .probox-left #bam2 {
     width: 40%;
     height: inherit;
     border: 3px solid greenyellow;
+    background: url(Assets/rsz_pacmanlite.png);
+    background-position: center;
+    background-size: cover;
     
 }
 .probox-left #dan1 {
@@ -417,4 +423,7 @@ section {
     width: 40%;
     height: inherit;
     border: 3px solid greenyellow;
+    background: url(Assets/rsz_fincord.jpg);
+    background-position: center;
+    background-size: cover;
 }
