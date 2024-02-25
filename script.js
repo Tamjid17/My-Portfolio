@@ -1,3 +1,4 @@
+                            // Code of changing occupation animation
 const occupations = ['Student', 'UI Designer', 'Developer', 'Freelancer'];
 const occupationElement = document.getElementById('ocp');
 let currentIndex = 0;
@@ -19,6 +20,7 @@ function showOccupation() {
 
  showOccupation();
 
+                                // Contact form data fetch
 
  const form = document.getElementById('form');
  const result = document.getElementById('result');
@@ -57,6 +59,7 @@ function showOccupation() {
          });
  });
 
+                            // Smooth animation code
 
  let grill = document.querySelector(".grill")
  grill.onclick = function() {
@@ -89,3 +92,12 @@ function showOccupation() {
    }
 });
 
+                    // Code of updating scroll progress
+
+function updateProgressBar(){
+    const {scrollTop, scrollHeight} = document.documentElement;
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+    document.querySelector('#progress-bar').style.setProperty('--progress', scrollPercent);
+  }
+  
+  document.addEventListener('scroll', updateProgressBar);
